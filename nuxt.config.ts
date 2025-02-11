@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['normalize.css/normalize.css', '~/assets/scss/helpers.scss', '~/assets/scss/main.scss'],
-  modules: ['@nuxt/eslint', '@nuxtjs/i18n'],
+  modules: ['@nuxt/eslint', '@nuxtjs/i18n', '@nuxt/fonts', '@nuxt/icon'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -11,6 +11,11 @@ export default defineNuxtConfig({
           additionalData: '@use "~/assets/_variables.scss" as *;',
         },
       },
+    },
+  },
+  icon: {
+    serverBundle: {
+      collections: ['uil'],
     },
   },
   i18n: {

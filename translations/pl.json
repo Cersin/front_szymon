@@ -1,5 +1,10 @@
 {
 	"header": {
-		"contact": "Kontakt"
+		"contact": "Kontakt",
+		"nav": {
+			"contact": "KONTAKT",
+			"home": "HOME",
+			"portfolio": "PORTFOLIO"
+		}
 	}
 }
