@@ -1,15 +1,14 @@
 // colors
-$primary-color: #066AFF;
-$primary-800-color: #0046AE;
-$primary-700-color: #001E4C;
-$primary-600-color: #7BB0FF;
-$primary-400-color: #CBD2E0;
-$primary-300-color: #E2E7F0;
-$primary-200-color: #EDF0F7;
-$primary-100-color: #F7F9FC;
-$contrast-color: #AA60FF;
-$white-color: #FFFFFF;
-
+$primary-color: #066aff;
+$primary-800-color: #0046ae;
+$primary-700-color: #001e4c;
+$primary-600-color: #7bb0ff;
+$primary-400-color: #cbd2e0;
+$primary-300-color: #e2e7f0;
+$primary-200-color: #edf0f7;
+$primary-100-color: #f7f9fc;
+$contrast-color: #aa60ff;
+$white-color: #ffffff;
 
 // texts
 $text-header-large: 56px;
@@ -17,3 +16,97 @@ $text-header: 32px;
 $text-normal: 18px;
 $text-small: 16px;
 $text-subtitle-1: 24px;
+
+// media queries mixin
+// media aliases and breakpoints
+$screen-sm-min: 600px;
+$screen-md-min: 960px;
+$screen-lg-min: 1280px;
+$screen-xl-min: 1920px;
+
+$screen-xs-max: 599px;
+$screen-sm-max: 959px;
+$screen-md-max: 1279px;
+$screen-lg-max: 1919px;
+$screen-xl-max: 5000px;
+
+// media devices
+@mixin xs {
+  @media screen and (max-width: #{$screen-xs-max}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+// media lt queries
+@mixin lt-sm {
+  @media screen and (max-width: #{$screen-xs-max}) {
+    @content;
+  }
+}
+
+@mixin lt-md {
+  @media screen and (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+@mixin lt-lg {
+  @media screen and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lt-xl {
+  @media screen and (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// media gt queries
+@mixin gt-xs {
+  @media screen and (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin gt-sm {
+  @media screen and (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin gt-md {
+  @media screen and (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin gt-lg {
+  @media screen and (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
