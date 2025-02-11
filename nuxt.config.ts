@@ -3,13 +3,30 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['normalize.css/normalize.css', '~/assets/scss/helpers.scss', '~/assets/scss/main.scss'],
+  modules: ['@nuxt/eslint', '@nuxtjs/i18n'],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
           additionalData: '@use "~/assets/_variables.scss" as *;',
-        }
-      }
-    }
-  }
-})
+        },
+      },
+    },
+  },
+  i18n: {
+    vueI18n: './i18n.config.ts',
+    strategy: 'prefix_except_default',
+    multiDomainLocales: true,
+    differentDomains: true,
+    locales: [
+      {
+        code: 'pl',
+        domain: 'localhost:3000',
+      },
+      {
+        code: 'en',
+        domain: 'localhost:3000',
+      },
+    ],
+  },
+});
