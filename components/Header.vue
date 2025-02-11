@@ -19,7 +19,16 @@ import SocialLinks from './widgets/SocialLinks.vue';
   </header>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
+@keyframes slideInFromLeft {
+  0% {
+    transform: scale(0.5) rotate(1turn);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -33,6 +42,7 @@ import SocialLinks from './widgets/SocialLinks.vue';
     object-fit: contain;
     height: 90%;
     transition: 1s all;
+    animation: 1.5s ease-out slideInFromLeft;
 
     cursor: pointer;
 
