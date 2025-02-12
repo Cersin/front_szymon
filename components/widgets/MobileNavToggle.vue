@@ -20,22 +20,22 @@ const navState = useMobileNav();
 
 .button {
   position: fixed;
-  top: 48px;
-  right: 32px;
-  width: 36px;
-  height: 36px;
+  top: 3rem;
+  right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   color: black;
   display: inline-block;
   cursor: pointer;
   transition: all 0.2s ease-in;
-  padding-top: 8px;
-  line-height: 8px;
+  padding-top: 0.5rem;
+  line-height: 0.5rem;
   text-align: left;
   z-index: 201;
 }
 
 .button span {
-  height: 3px;
+  height: 0.2rem;
   width: 100%;
   background: black;
   display: inline-block;
@@ -44,7 +44,7 @@ const navState = useMobileNav();
 
 .checked ~ .button span:nth-child(1) {
   width: 100%;
-  transform: rotate(45deg) translateY(10px) translateX(0);
+  transform: rotate(45deg) translateY(0.8rem) translateX(0);
 }
 .checked ~ .button span:nth-child(2) {
   width: 0;
@@ -52,6 +52,6 @@ const navState = useMobileNav();
 
 .checked ~ .button span:nth-child(3) {
   width: 100%;
-  transform: rotate(-45deg) translateY(-10px) translateX(-4px);
+  transform: rotate(-45deg) translateY(-0.8rem) translateX(-4px);
 }
 </style>

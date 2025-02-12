@@ -34,9 +34,9 @@ const links: IconRoute[] = [
 .icons {
   display: flex;
   align-items: center;
-  font-size: 40px;
+  font-size: 2rem;
   color: rgba($primary-color, 0.5);
-  gap: 12px;
+  gap: 1rem;
 
   &__icon {
     transition: all 0.5s;

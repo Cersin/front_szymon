@@ -15,6 +15,7 @@ const navItems = useNavigation();
   display: flex;
   align-items: center;
   gap: 48px;
+  font-size: 1rem;
 
   a {
     transition: 0.3s ease-in-out;

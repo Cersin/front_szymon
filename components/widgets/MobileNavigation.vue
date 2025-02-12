@@ -41,15 +41,16 @@ const navItems = useNavigation();
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 3rem;
 
   a {
     transition: 0.3s ease-in-out;
     text-decoration: none;
     color: black;
+    font-size: 1.6rem;
 
     &:hover {
-      color: $primary-color;
+      color: $primary-800-color;
       transform: scale(1.4) rotate(0.01turn);
     }
   }
