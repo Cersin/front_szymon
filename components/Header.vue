@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import DesktopNavigation from './widgets/DesktopNavigation.vue';
 import SocialLinks from './widgets/SocialLinks.vue';
+import MobileNavToggle from './widgets/MobileNavToggle.vue';
 </script>
 
 <template>
@@ -11,7 +12,9 @@ import SocialLinks from './widgets/SocialLinks.vue';
       <DesktopNavigation />
     </div>
 
-    <div class="nav-header__sections-mobile"></div>
+    <div class="nav-header__sections-mobile">
+      <MobileNavToggle />
+    </div>
 
     <div class="nav-header__socials">
       <SocialLinks />
