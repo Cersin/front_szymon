@@ -39,7 +39,7 @@ import MobileNavToggle from './widgets/MobileNavToggle.vue';
 
   height: 76px;
   overflow: hidden;
-  padding: 32px;
+  padding: 32px 0;
 
   &__image {
     object-fit: contain;

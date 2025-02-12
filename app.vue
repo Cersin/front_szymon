@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { Header } from '#components';
+import AboutSection from './components/AboutSection.vue';
+import HeaderSection from './components/HeaderSection.vue';
 import MobileNavigtation from './components/widgets/MobileNavigation.vue';
 </script>
 
 <template>
   <div>
     <MobileNavigtation />
-    <Header />
+    <HeaderSection />
+    <AboutSection />
   </div>
 </template>
 
