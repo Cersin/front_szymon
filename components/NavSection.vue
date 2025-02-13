@@ -5,7 +5,7 @@ import MobileNavToggle from './widgets/nav/MobileNavToggle.vue';
 </script>
 
 <template>
-  <header class="nav-header">
+  <header id="header" class="nav-header">
     <img @click="$router.push('/')" class="nav-header__image" src="/public/logo_front_szymon.png" />
 
     <div class="nav-header__sections-desktop">

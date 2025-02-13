@@ -8,6 +8,11 @@ export default defineNuxtConfig({
     '~/assets/scss/main.scss',
     '~/assets/scss/fonts.scss',
   ],
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth',
+    },
+  },
   modules: ['@nuxt/eslint', '@nuxtjs/i18n', '@nuxt/fonts', '@nuxt/icon'],
   vite: {
     css: {

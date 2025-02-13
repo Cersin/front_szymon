@@ -8,8 +8,12 @@ export default function () {
 
   const navItems: NavItem[] = [
     {
-      to: '/',
+      to: '#header',
       label: t('nav.route.home'),
+    },
+    {
+      to: '#about',
+      label: t('nav.route.about'),
     },
     {
       to: '/',

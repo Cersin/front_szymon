@@ -1,4 +1,7 @@
 {
+	"about": {
+		"title": "O mnie"
+	},
 	"header": {
 		"collaborate": "Podejmij współpracę",
 		"name": "SZYMON WÓJCIK.",
@@ -8,6 +11,7 @@
 	"nav": {
 		"contact": "Kontakt",
 		"route": {
+			"about": "O MNIE",
 			"contact": "KONTAKT",
 			"home": "HOME",
 			"portfolio": "PORTFOLIO"
