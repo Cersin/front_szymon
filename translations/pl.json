@@ -1,4 +1,10 @@
 {
+	"about": {
+		"collaborate": "Podejmij współpracę",
+		"name": "SZYMON WÓJCIK.",
+		"profession": "Jestem | Frontend Developerem",
+		"welcome": "Cześć, nazywam się"
+	},
 	"header": {
 		"contact": "Kontakt",
 		"nav": {

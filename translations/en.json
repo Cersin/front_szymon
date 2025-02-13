@@ -1,4 +1,10 @@
 {
+	"about": {
+		"collaborate": "Let's cooperate",
+		"name": "SZYMON WÓJCIK.",
+		"profession": "I am a | Frontend Developer",
+		"welcome": "Hi, my name is"
+	},
 	"header": {
 		"contact": "Contact",
 		"nav": {

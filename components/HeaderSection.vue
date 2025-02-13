@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import DesktopNavigation from './widgets/DesktopNavigation.vue';
-import SocialLinks from './widgets/SocialLinks.vue';
-import MobileNavToggle from './widgets/MobileNavToggle.vue';
+import DesktopNavigation from './widgets/nav/DesktopNavigation.vue';
+import SocialLinks from './widgets/header/SocialLinks.vue';
+import MobileNavToggle from './widgets/nav/MobileNavToggle.vue';
 </script>
 
 <template>

@@ -1,10 +1,20 @@
+<script setup lang="ts">
+import AboutImage from './widgets/about/AboutImage.vue';
+</script>
+
 <template>
   <section class="about">
     <div class="about__description">
-      <div class="font-header">Cześć, nazywam się</div>
-      <div class="font-header-large">SZYMON WÓJCIK.</div>
-      <div class="font-header">Jestem <span class="font-bold">Front-end Developerem</span></div>
-      <button class="about__button font-subtitle-1">Podejmij współpracę</button>
+      <div class="font-header">{{ $t('about.welcome') }}</div>
+      <div class="font-header-large">{{ $t('about.name') }}</div>
+      <div class="font-header">
+        {{ $t('about.profession', 1) }} <span class="font-bold">{{ $t('about.profession', 2) }}</span>
+      </div>
+      <button class="about__button font-subtitle-1">{{ $t('about.collaborate') }}</button>
+    </div>
+
+    <div class="about__photo">
+      <AboutImage />
     </div>
   </section>
 </template>
@@ -13,6 +23,13 @@
 .about {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+
+  @include gt-sm {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
 
   &__description {
     display: flex;
