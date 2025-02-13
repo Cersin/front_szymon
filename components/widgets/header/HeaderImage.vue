@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="image__container">
     <div class="image">
       <div />
       <div />
@@ -26,12 +26,18 @@
 }
 
 .image {
-  --n: 3;
+  &__container {
+    @include gt-sm {
+      transform: translateY(-40px);
+    }
+  }
+
+  --n: 5;
   --d: 2.5rem;
   --s: 1.1;
 
   width: 100%;
-  height: 400px;
+  height: 30rem;
   display: inline-block;
   box-sizing: border-box;
   position: relative;
@@ -52,9 +58,9 @@
   }
 
   @include gt-md {
-    width: 700px;
+    width: 30rem;
     margin-top: 0rem;
-    height: 600px;
+    height: 30rem;
   }
 
   @include gt-lg {

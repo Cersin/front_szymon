@@ -1,80 +1,59 @@
 <script setup lang="ts">
-import DesktopNavigation from './widgets/nav/DesktopNavigation.vue';
-import SocialLinks from './widgets/header/SocialLinks.vue';
-import MobileNavToggle from './widgets/nav/MobileNavToggle.vue';
+import HeaderImage from './widgets/header/HeaderImage.vue';
 </script>
 
 <template>
-  <header class="nav-header">
-    <img @click="$router.push('/')" class="nav-header__image" src="/public/logo_front_szymon.png" />
-
-    <div class="nav-header__sections-desktop">
-      <DesktopNavigation />
+  <section class="header">
+    <div class="header__description">
+      <div class="font-header">{{ $t('header.welcome') }}</div>
+      <div class="font-header-large">{{ $t('header.name') }}</div>
+      <div class="font-header">
+        {{ $t('header.profession', 1) }} <span class="font-bold">{{ $t('header.profession', 2) }}</span>
+      </div>
+      <button class="header__button font-subtitle-1">{{ $t('header.collaborate') }}</button>
     </div>
 
-    <div class="nav-header__sections-mobile">
-      <MobileNavToggle />
+    <div class="header__photo">
+      <HeaderImage />
     </div>
-
-    <div class="nav-header__socials">
-      <SocialLinks />
-    </div>
-  </header>
+  </section>
 </template>
 
 <style scoped lang="scss">
-@keyframes slideInFromLeft {
-  0% {
-    transform: scale(0.5) rotate(1turn);
-  }
-  100% {
-    transform: scale(1) rotate(0);
-  }
-}
-
-.nav-header {
+.header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
 
-  height: 4rem;
-  overflow: hidden;
-  padding: 2rem 0;
+  @include gt-sm {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
 
-  &__image {
-    object-fit: contain;
-    height: 90%;
-    transition: 1s all;
-    animation: 1.5s ease-out slideInFromLeft;
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
 
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__button {
+    margin-top: 0.8rem;
+    align-self: flex-start;
+    padding: 0.8rem 1.2rem;
+    background-color: $primary-color;
+    color: $white-color;
+    border: 0;
+    border-radius: 10px;
     cursor: pointer;
+    transition: all 0.3s;
 
     &:hover {
-      transform: scale(1.2) rotate(0.5turn);
-    }
-  }
-
-  &__sections {
-    &-desktop {
-      display: none;
-
-      @include gt-sm {
-        display: flex;
-      }
-    }
-
-    &-mobile {
-      @include gt-sm {
-        display: none;
-      }
-    }
-  }
-
-  &__socials {
-    display: none;
-
-    @include gt-sm {
-      display: flex;
+      background-color: $primary-800-color;
     }
   }
 }

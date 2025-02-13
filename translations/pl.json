@@ -1,13 +1,13 @@
 {
-	"about": {
+	"header": {
 		"collaborate": "Podejmij współpracę",
 		"name": "SZYMON WÓJCIK.",
 		"profession": "Jestem | Frontend Developerem",
 		"welcome": "Cześć, nazywam się"
 	},
-	"header": {
+	"nav": {
 		"contact": "Kontakt",
-		"nav": {
+		"route": {
 			"contact": "KONTAKT",
 			"home": "HOME",
 			"portfolio": "PORTFOLIO"

@@ -9,15 +9,15 @@ export default function () {
   const navItems: NavItem[] = [
     {
       to: '/',
-      label: t('header.nav.home'),
+      label: t('nav.route.home'),
     },
     {
       to: '/',
-      label: t('header.nav.portfolio'),
+      label: t('nav.route.portfolio'),
     },
     {
       to: '/',
-      label: t('header.nav.contact'),
+      label: t('nav.route.contact'),
     },
   ];
 
