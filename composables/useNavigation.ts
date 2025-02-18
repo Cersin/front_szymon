@@ -16,11 +16,11 @@ export default function () {
       label: t('nav.route.about'),
     },
     {
-      to: '/',
+      to: '#portfolio',
       label: t('nav.route.portfolio'),
     },
     {
-      to: '/',
+      to: '#contact',
       label: t('nav.route.contact'),
     },
   ];

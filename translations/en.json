@@ -16,5 +16,8 @@
 			"home": "HOME",
 			"portfolio": "PORTFOLIO"
 		}
+	},
+	"portfolio": {
+		"title": "Portfolio"
 	}
 }

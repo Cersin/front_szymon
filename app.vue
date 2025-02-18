@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { AboutSection } from '#components';
-import HeaderSection from './components/HeaderSection.vue';
-import NavSection from './components/NavSection.vue';
+import { AboutSection, PortfolioSection, NavSection, HeaderSection } from '#components';
 import MobileNavigation from './components/widgets/nav/MobileNavigation.vue';
 </script>
 
@@ -11,6 +9,7 @@ import MobileNavigation from './components/widgets/nav/MobileNavigation.vue';
     <NavSection />
     <HeaderSection />
     <AboutSection />
+    <PortfolioSection />
   </div>
 </template>
 
